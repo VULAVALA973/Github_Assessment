@@ -1,0 +1,9 @@
+
+    version: 2
+
+sources:
+  - name: assessment
+    database: DBT_ASSESSMENT
+    schema: ASSESSMENT
+    tables:
+      - name: CUSTOMERS
