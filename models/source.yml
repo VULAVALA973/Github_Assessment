@@ -2,7 +2,7 @@
     version: 2
 
 sources:
-  - name: assessment
+  - name: ASSESSMENT
     database: DBT_ASSESSMENT
     schema: ASSESSMENT
     tables:
