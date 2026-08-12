@@ -4,5 +4,7 @@
 select 
   customer_id,
     customer_name,
-    city
+    city,
+         created_date,
+    updated_at
     from {{ ref('stg_customers') }}
