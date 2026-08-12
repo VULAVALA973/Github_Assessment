@@ -7,7 +7,9 @@
 SELECT
     customer_id,
     customer_name,
-    city
+    city,
+     created_date,
+    updated_at
 FROM {{ source('ASSESSMENT', 'CUSTOMERS') }}
 
 
