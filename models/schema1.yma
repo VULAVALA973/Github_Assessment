@@ -10,5 +10,6 @@ models:
               arguments:
                 to: ref('DBT_ASSESSMENT','CUSTOMERS')
                 field: CUSTOMER_ID
+
                 
 
