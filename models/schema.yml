@@ -1,0 +1,10 @@
+
+
+    version: 2
+
+sources:
+  - name: ASSESSMENT
+    database: DBT_ASSESSMENT
+    schema: ASSESSMENT
+    tables:
+      - name: ORDERS
