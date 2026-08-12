@@ -9,7 +9,8 @@ SELECT
     customer_name,
     city,
      created_date,
-    updated_at
+    updated_at,
+    age
 FROM {{ source('ASSESSMENT', 'CUSTOMERS') }}
 
 
