@@ -3,3 +3,4 @@ SELECT
     customer_name,
     city
 FROM {{ source('ASSESSMENT', 'CUSTOMERS') }}
+
