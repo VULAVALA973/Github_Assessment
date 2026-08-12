@@ -5,8 +5,10 @@ config-version: 2
 
 
 seeds:
-    my_dbt_project:
+    my_new_project:
     +schema: reference
     +quote_columns: false
+
+
 
 
