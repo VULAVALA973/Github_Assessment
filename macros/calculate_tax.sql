@@ -4,5 +4,5 @@
 
 SELECT
     amount,
-    {{ calculate_tax('amount') }} AS tax
+    {{ calculate_tax('order_amount') }} AS tax
 FROM {{ ref('stg_orders') }}
