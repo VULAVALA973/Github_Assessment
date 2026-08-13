@@ -1,6 +1,4 @@
-
-
-    version: 2
+version: 2
 
 sources:
   - name: ASSESSMENT
@@ -8,3 +6,17 @@ sources:
     schema: ASSESSMENT
     tables:
       - name: ORDERS
+
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+
+  - name: stg_orders
+    columns:
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+              
