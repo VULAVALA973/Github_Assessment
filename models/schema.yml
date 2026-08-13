@@ -6,6 +6,7 @@ sources:
     schema: ASSESSMENT
     tables:
       - name: ORDERS
+      - name: CUSTOMERS
 
 models:
   - name: stg_customers
@@ -17,6 +18,6 @@ models:
       - name: customer_id
         tests:
           - relationships:
-              to: ref('stg_customers')
-              field: customer_id
-              
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id
