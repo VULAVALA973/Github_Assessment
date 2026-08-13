@@ -7,5 +7,5 @@ sources:
     database: DBT_ASSESSMENT
     schema: ASSESSMENT
     tables:
-      -name:CUSTOMERS
+      -name: CUSTOMERS
       - name: ORDERS
