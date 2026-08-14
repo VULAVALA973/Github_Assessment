@@ -1,0 +1,3 @@
+select CUSTOMER_ID,
+   CUSTOMER_NAME,
+ city FROM {{source('SCHEMA_DBT','CUSTOMERS')}}
