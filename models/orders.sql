@@ -1,8 +1,6 @@
-{{ config(materialized='table') }}
-
 SELECT
-    order_id,
-    customer_id,
-    order_date,
-    amount
+    ORDER_ID,
+    CUSTOMER_ID,
+    ORDER_DATE,
+    AMOUNT
 FROM {{ source('ASSESSMENT_DBT', 'ORDERS1') }}
