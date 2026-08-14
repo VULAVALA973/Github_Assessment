@@ -1,11 +1,8 @@
-version: 2 
-
+version: 2
 
 sources:
-
-
-- name: ASSESSMENT_DBT
- database: ASSESSMENT_DBT
- schema: SCHEMA_DBT
- tables:
-- name: CUSTOMERS
+  - name: ASSESSMENT_DBT
+    database: ASSESSMENT_DBT
+    schema: SCHEMA_DBT
+    tables:
+      - name: CUSTOMERS
