@@ -4,5 +4,5 @@ SELECT
     order_id,
     customer_id,
     order_date,
-    order_amount
+    amount
 FROM {{ source('ASSESSMENT_DBT', 'ORDERS1') }}
