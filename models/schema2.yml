@@ -8,5 +8,5 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('CUSTOMERS')
+                to: ref('CUSTOMERS1')
                 field: CUSTOMER_ID
