@@ -2,5 +2,5 @@ SELECT
     customer_id,
     customer_name,
     age
-FROM {{ ref('stg_customers') }}
+FROM {{ ref('customers1') }}
 WHERE age < 0;
