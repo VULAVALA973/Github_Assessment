@@ -5,4 +5,5 @@ sources:
     database: ASSESSMENT_DBT
     schema: SCHEMA_DBT
     tables:
-      - name: CUSTOMERS
+      - name: CUSTOMERS1
+      - name: ORDERS1
