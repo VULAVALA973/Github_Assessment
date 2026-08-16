@@ -1,9 +1,23 @@
 version: 2
 
 sources:
-  - name: ASSESSMENT_DBT
+  - name: SCHEMA_DBT
     database: ASSESSMENT_DBT
     schema: SCHEMA_DBT
     tables:
-      - name: CUSTOMERS1
       - name: ORDERS1
+      - name: CUSTOMERS1
+
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+
+  - name: orders
+    columns:
+      - name: customer_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id

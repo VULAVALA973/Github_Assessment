@@ -4,3 +4,4 @@ SELECT
     ORDER_DATE,
     AMOUNT
 FROM {{ source('ASSESSMENT_DBT', 'ORDERS1') }}
+
