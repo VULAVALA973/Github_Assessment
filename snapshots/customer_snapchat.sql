@@ -28,7 +28,7 @@ updated_at='updated_at'
 
 select *  
 
-from {{ source('SCHEMA_DBT', 'CUSTOMERS1') }}  
+from {{ source('ASSESSMENT_DBT', 'CUSTOMERS1') }}  
 
  
 
