@@ -5,4 +5,4 @@ sources:
     database: ASSESSMENT1_DBT
     schema: ASSESSMENT1
     tables:
-      - name: stg_customer
+      - name: customer
