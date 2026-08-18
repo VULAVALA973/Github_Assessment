@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: ASSESSMENT1
+    database: ASSESSMENT1_DBT
+    schema: ASSESSMENT1
+    tables:
+      - name: stg_customer
