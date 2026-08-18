@@ -6,3 +6,5 @@ sources:
     schema: ASSESSMENT1
     tables:
       - name: customer
+      - name: STG_ORDER
+
