@@ -1,3 +1,3 @@
 {{config(materialized='table')}}
-select customer_id , customer_name,city 
+select order_id,amount,customer_id
 from {{source('ASSESSMENT1','STG_ORDER')}}
