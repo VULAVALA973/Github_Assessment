@@ -1,7 +1,0 @@
-SELECT
-    ORDER_ID,
-    CUSTOMER_ID,
-    ORDER_DATE,
-    AMOUNT
-FROM {{ source('ASSESSMENT_DBT', 'ORDERS1') }}
-

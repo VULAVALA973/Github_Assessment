@@ -1,6 +1,0 @@
-SELECT
-    CUSTOMER_ID,
-    CUSTOMER_NAME,
-    CITY,
-    AGE
-FROM {{ source('ASSESSMENT_DBT', 'CUSTOMERS1') }}

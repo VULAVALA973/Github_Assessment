@@ -6,4 +6,3 @@ sources:
     schema: ASSESSMENT1
     tables:
       - name: stg_customer
-    
