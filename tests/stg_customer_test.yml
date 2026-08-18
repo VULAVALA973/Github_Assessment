@@ -1,11 +1,25 @@
+
 version: 2
+ 
+sources:
+  - name: ASSESSMENT1
+    database: ASSESSMENT1_DBT
+    schema: ASSESSMENT1
+    tables:
+      - name: STG_ORDER
+      - name: CUSTOMER
  
 models:
   - name: stg_customer
     columns:
       - name: customer_id
+ 
+  - name: stg_order
+    columns:
+      - name: customer_id
         tests:
-          - unique
-          - not_null
-          
-
+          - relationships:
+              arguments:
+                to: ref('stg_customer')
+                field: customer_id
+ 
